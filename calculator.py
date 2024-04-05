@@ -115,7 +115,6 @@ def cancel(update: Update, context: CallbackContext) -> int:
     return ConversationHandler.END
 
 def main():
-    bot_token = 'TELEGRAM-API'
     updater = Updater(token=bot_token, use_context=True)
 
     conv_handler = ConversationHandler(
