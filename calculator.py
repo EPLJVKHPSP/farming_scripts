@@ -3,6 +3,8 @@ from telegram import Update, ReplyKeyboardMarkup, KeyboardButton
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, ConversationHandler, CallbackContext
 from pycoingecko import CoinGeckoAPI
 
+from config import TELEGRAM_BOT_TOKEN as bot_token
+
 def get_price(crypto_name):
     cg_client = CoinGeckoAPI()
     try:
