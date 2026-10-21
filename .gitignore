@@ -1,1 +1,9 @@
 config.py
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+myenv/
+__pycache__/
+*.py[cod]
